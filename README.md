@@ -1,11 +1,11 @@
 # test-postmessage-libs
 
 # Demo
-[Postmate Demo](https://github.com/cat2151/test-postmessage-libs/postmate/)
+[Postmate Demo](https://cat2151.github.io/test-postmessage-libs/postmate/)
 
 # Features
 - 2つのwebpage間の双方向通信を可能に
-  - Postmateを使っています
+  - [Postmate](https://github.com/dollarshaveclub/postmate)を使っています
 - シンプルな実装でわかりやすいサンプル
   - 実際動くサンプル
   - もしOS都合などで動かなくなっても、原因調査がしやすいよう、
@@ -14,21 +14,21 @@
 # Requirement
 - 動かす場合
   - ブラウザがあればOK
-  - [Postmate Demo](https://github.com/cat2151/test-postmessage-libs/postmate/) がそのまま動きます
+  - [Postmate Demo](https://cat2151.github.io/test-postmessage-libs/postmate/) がそのまま動きます
 - 開発する場合
   - ブラウザがあればOK
   - VSCode の Live Server等があれば楽
 
 # Usage
 - 動かす場合
-  - [Postmate Demo](https://github.com/cat2151/test-postmessage-libs/postmate/) を開きます
+  - [Postmate Demo](https://cat2151.github.io/test-postmessage-libs/postmate/) を開きます
   - parentのtextareaに入力し、childに自動反映されることを確認します
   - childのtextareaに入力し、parentに自動反映されることを確認します
   - Chrome DevTools コンソールを開き、reloadして、consoleのlogを確認します
 
 # Installation
 - 開発する場合
-  - cloneして `postmate/` のソースを開いてLive Serverを立ち上げるだけでOK
+  - cloneして `postmate/` を`VSCode`で開いて`Live Server`を立ち上げるだけでOK
 
 # Note
 - このprojectが目指すもの
