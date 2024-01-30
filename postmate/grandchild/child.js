@@ -27,6 +27,14 @@ function postmateChildToParent() {
   function onChangeParent(data) {
     console.log(`child from parent : onChangeParent : received data : [${data}]`);
     textarea.value = data;
+
+    // thenのあと、時間をおかないと失敗した。thenの末尾でも失敗した。thenのあとすぐここを入力しても失敗した。
+    // 数秒待つと問題なさそうだった。ひとまずこれで対処する。
+    // より安全な手は、今後調査と検討とする。
+    if (!childToGrandchild) {
+      postmateChildToGrandchild();
+      childToGrandchild = true;
+    }
   }
 }
 
@@ -63,4 +71,4 @@ function postmateChildToGrandchild() {
 }
 
 postmateChildToParent();
-postmateChildToGrandchild();
+let childToGrandchild;

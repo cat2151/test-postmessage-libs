@@ -8,8 +8,9 @@ function postmateParent() {
     child.call('onCompleteHandshakeParent', '"Hello, World!" by parent');
 
     child.get('height')
-    .then(height => child.frame.style.height = `${height * 1.5}px`);
+    .then(height => child.frame.style.height = `${height * 3}px`);
       // ↑ 見切れる。原因不明。取り急ぎ height * 1.5 した
+      // grandchildのぶんも入れて * 3 とした
 
     // Listen to a particular event from the child
     child.on('onCompleteHandshakeChild', data => {
