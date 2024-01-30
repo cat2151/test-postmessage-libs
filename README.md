@@ -39,3 +39,8 @@
 - このprojectが目指さないもの
   - Postmateの完全なリファレンスを作成、細部まで完璧に使いこなす、未知の部分がなくなるまですべて調査する、使い倒す
   - 高速化、高機能化
+- Experimental 親、子、孫、それぞれで双方向通信
+  - [Demo](https://cat2151.github.io/test-postmessage-libs/postmate/grandchild/)
+    - 孫の通信開始は、親のtextareaに入力したタイミングとしています、仮です。
+    - ただし通信開始が早すぎると失敗します。
+    - 改善は今後の課題です。
